@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<head>
+		<title>Warikan</title>
+		<meta charset="uft-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		<form >
+			<br>
+			<div class="col-sm">
+				<label class="form-label" for="money-text">金額</label>
+				<input type="number" id="money-text" value="0" class="form-control" style="width:auto;">
+				<br>
+				<label class="form-label" for="flac-text">端数</label>
+				<input type="number" id="flac-text" value="0" class="form-control" style="width:auto;" disabled>
+				<br>
+				<label class="form-label" for="truncation">切り捨て金額</label>
+				<select id="truncation" class="form-control" style="width:auto;">
+					<option>100</option>
+					<option>500</option>
+					<option>1000</option>
+				</select>
+			</div>
+			<br>
+			<div class="col-sm">
+				<button type="button" id="add-group-button" class="btn btn-primary">グループ追加</button>
+				<button type="button" id="calc-button" class="btn btn-primary">計算</button>
+			</div>
+			<br>
+			<ul id="group-list" class="list-group">
+				<!--
+				<li><div>
+					<input type="number" />
+					<input type="number" />
+					<button />
+				</div></li>
+				-->	
+			</ul>
+		</form>
+		
+		<!-- JavaScript -->
+		<script src="src/index.js"></script>
+		<!-- Bootstrap Javascript(jQuery含む) -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
